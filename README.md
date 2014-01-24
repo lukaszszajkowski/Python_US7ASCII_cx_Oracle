@@ -15,7 +15,7 @@ How to display SECURITY_HINTS.ANSWER as "£aÀÁÂÃÄÅÆÇÈ" ??
 Any hints will be welcomed.
 
 
-
+```
 run test_nls for None
 version=11.1.0.7.0
 encoding=WINDOWS-1252	nencoding=WINDOWS-1252	maxBytesPerCharacter=1
@@ -41,3 +41,4 @@ Traceback (most recent call last):
   File "C:/dev/tmp/Python_US7ASCII_cx_Oracle/showUS7ASCII.py", line 55, in test_nls
     for rawValue in cursor:
 UnicodeDecodeError: 'ascii' codec can't decode byte 0xa3 in position 0: ordinal not in range(128)
+```
