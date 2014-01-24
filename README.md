@@ -12,7 +12,7 @@ and when usinx NLS_LANG="ENGLISH_UNITED KINGDOM.US7ASCII" I get
 see log below.
 
 How to display SECURITY_HINTS.ANSWER as "£aÀÁÂÃÄÅÆÇÈ" ??
-Any hints will be welcomed.
+
 
 
 ```
