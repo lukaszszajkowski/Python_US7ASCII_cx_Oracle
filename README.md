@@ -16,19 +16,22 @@ Any hints will be welcomed.
 
 
 
->>> run test_nls for None
+run test_nls for None
 version=11.1.0.7.0
 encoding=WINDOWS-1252	nencoding=WINDOWS-1252	maxBytesPerCharacter=1
 ENGLISH_UNITED KINGDOM.US7ASCII
 query returned [¿a¿¿¿¿¿¿¿¿¿]
-str  [191] [97] [191] [191] [191] [191] [191] [191] [191] [191] [191]
->>> run test_nls for .AL32UTF8
+str  [191] [97] [191] [191] [191] [191] [191] [191] [191] [191] [191
+
+
+run test_nls for .AL32UTF8
 version=11.1.0.7.0
 encoding=UTF-8	nencoding=UTF-8	maxBytesPerCharacter=4
 AMERICAN_AMERICA.US7ASCII
 query returned [�a���������]
 str  [65533] [97] [65533] [65533] [65533] [65533] [65533] [65533] [65533] [65533] [65533]
->>> run test_nls for ENGLISH_UNITED KINGDOM.US7ASCII
+
+run test_nls for ENGLISH_UNITED KINGDOM.US7ASCII
 version=11.1.0.7.0
 encoding=US-ASCII	nencoding=US-ASCII	maxBytesPerCharacter=1
 ENGLISH_UNITED KINGDOM.US7ASCII
