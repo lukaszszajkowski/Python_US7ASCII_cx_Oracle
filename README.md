@@ -5,8 +5,11 @@ Problem with displaying national characters from “ENGLISH_UNITED KINGDOM.US7AS
 
 
 In Oracle 11 Database I created SECURITY_HINTS.ANSWER="£aÀÁÂÃÄÅÆÇÈ".
+
 Now when using cx_Oracle and default NLS_LANG and I get "¿a¿¿¿¿¿¿¿¿¿"
+
 and when usinx NLS_LANG="ENGLISH_UNITED KINGDOM.US7ASCII" I get
+
 "UnicodeDecodeError: 'ascii' codec can't decode byte 0xa3 in position 0: ordinal not in range(128)"
 
 see log below.
