@@ -4,11 +4,6 @@ import cx_Oracle
 
 log = logging.getLogger("main")
 
-#£aÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùú
-# ¿a¿¿¿¿¿¿¿¿¿
-# £aÀÁÂÃÄÅÆÇÈ
-
-
 def get_connection():
     host = "dev01"
     port = 1521
@@ -24,17 +19,6 @@ def get_connection():
 
     return connection
 
-
-def outconverter(value):
-    print("outconverter")
-    value = value.replace(',', '.')
-    return value
-
-def OutputTypeHandler(cursor, name, defaultType, size,
-                      precision, scale):
-    print(("OutputTypeHandler %s %s %s" % (name, defaultType, size)))
-    if defaultType in (cx_Oracle.STRING, cx_Oracle.FIXED_CHAR):
-        return cursor.var(cx_Oracle.LONG_BINARY, 8132, cursor.arraysize)
 
 def test_nls(nls_lang=None):
     print (">>> run test_nls for %s" %(nls_lang))
